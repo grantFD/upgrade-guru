@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Seniors Interactive Guide</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to override or extend Tailwind, and for specific component styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light grey background */
+            color: #333; /* Dark grey text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #007BFF; /* Blue header */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Main content area styling */
+        main {
+            flex-grow: 1; /* Allows main content to take up available space */
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            /* Transition for page content changes */
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+
+        /* Page Specific Styles (Step and Detail) */
+        .page {
+            padding: 20px;
+        }
+
+        .page h2 {
+            color: #007BFF;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .page p {
+            margin-bottom: 10px;
+        }
+
+        .page img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* More Info Links Box */
+        .more-info-box {
+            border: 1px solid #ddd;
+            background-color: #e9f7ff; /* Light blue background */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .more-info-box h3 {
+            color: #0056b3;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .more-info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .more-info-box ul li {
+            margin-bottom: 5px;
+        }
+
+        .more-info-box ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .more-info-box ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Action Buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+            gap: 10px; /* Space between buttons */
+            margin-top: 25px;
+            justify-content: center; /* Center buttons horizontally */
+        }
+
+        .button-container.stacked {
+            flex-direction: column;
+        }
+
+        .button-container button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            flex-grow: 1; /* Buttons stretch in stacked layout */
+            text-align: center;
+            white-space: normal; /* Allow button text to wrap */
+        }
+
+        .button-container.stacked button {
+            width: 100%; /* Stretched width */
+        }
+
+        /* Specific button styles from config */
+        .button-style-primary {
+            background-color: #007BFF;
+            color: white;
+        }
+        .button-style-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .button-style-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .button-style-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .button-style-warning {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .button-style-warning:hover {
+            background-color: #e0a800;
+        }
+
+        /* Default button styles (fallback if style is not specified or recognized) */
+        .button-container button.default-style {
+            background-color: #28a745; /* Green */
+            color: white;
+        }
+
+        .button-container button.default-style:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .button-container {
+                flex-direction: column; /* Stack buttons on small screens by default */
+            }
+
+            .button-container button {
+                width: 100%; /* Make buttons full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4 text-center shadow-md">
+        <h1 class="text-3xl font-bold">Digital Seniors Interactive Guide</h1>
+    </header>
+    <main id="app-container" class="flex-grow p-5 max-w-3xl mx-auto bg-white rounded-lg shadow-lg my-5">
+        <!-- Content will be loaded here by JavaScript -->
+        <p class="text-center text-gray-600">Loading guide...</p>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+        <p class="text-sm">&copy; 2025 DS Guide App</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const appContainer = document.getElementById('app-container');
+            let guideData = {}; // Stores all parsed guide data (pages, details)
+            let currentPageId = 'start'; // The ID of the currently displayed page
+            let lastStepPageId = null; // Stores the ID of the last 'step' page visited
+            let parsingErrors = []; // Array to store parsing errors
+
+            // Function to parse simple Markdown for bold and italic
+            function parseMarkdownText(text) {
+                // Bold: **text**
+                text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                // Italic: *text*
+                text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                return text;
+            }
+
+            // Function to parse the custom configuration text
+            function parseConfig(configText) {
+                const lines = configText.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+                let currentSection = null;
+                let currentPageData = {};
+                parsingErrors = []; // Reset errors for new parse
+                let lineNumber = 0; // Track line numbers for better error messages
+
+                lines.forEach(line => {
+                    lineNumber++;
+                    if (line.startsWith('## PAGE:')) {
+                        // Save previous page if exists
+                        if (currentSection && currentPageData.id) {
+                            guideData[currentPageData.id] = { ...currentPageData };
+                        }
+                        currentPageData = { type: 'step', paragraphs: [], listItems: [], links: [], buttons: [] }; // Added listItems
+                        currentPageData.id = line.substring('## PAGE:'.length).trim();
+                        if (!currentPageData.id) {
+                            parsingErrors.push(`Line ${lineNumber}: PAGE ID is missing. Format: '## PAGE:your-page-id'`);
+                        }
+                        currentSection = 'page';
+                    } else if (line.startsWith('## DETAIL:')) {
+                        // Save previous page if exists
+                        if (currentSection && currentPageData.id) {
+                            guideData[currentPageData.id] = { ...currentPageData };
+                        }
+                        currentPageData = { type: 'detail', paragraphs: [], listItems: [], links: [] }; // Added listItems
+                        currentPageData.id = line.substring('## DETAIL:'.length).trim();
+                        if (!currentPageData.id) {
+                            parsingErrors.push(`Line ${lineNumber}: DETAIL ID is missing. Format: '## DETAIL:your-detail-id'`);
+                        }
+                        currentSection = 'detail';
+                    } else if (currentSection === 'page' || currentSection === 'detail') {
+                        if (line.startsWith('HEADING:')) {
+                            currentPageData.heading = parseMarkdownText(line.substring('HEADING:'.length).trim());
+                        } else if (line.startsWith('PARAGRAPH:')) {
+                            currentPageData.paragraphs.push(parseMarkdownText(line.substring('PARAGRAPH:'.length).trim()));
+                        } else if (line.startsWith('IMAGE:')) {
+                            currentPageData.image = line.substring('IMAGE:'.length).trim();
+                        } else if (line.startsWith('LINK:')) {
+                            const parts = line.substring('LINK:'.length).trim().split('||').map(p => p.trim());
+                            if (parts.length === 2 && parts[0] && parts[1]) {
+                                currentPageData.links.push({ text: parseMarkdownText(parts[0]), target: parts[1] });
+                            } else {
+                                parsingErrors.push(`Line ${lineNumber}: Malformed LINK. Expected 'LINK:Text || TargetPageIdOrUrl'`);
+                            }
+                        } else if (line.startsWith('BUTTON:')) {
+                            if (currentSection === 'detail') {
+                                parsingErrors.push(`Line ${lineNumber}: BUTTONs are not allowed on DETAIL pages. They are only for PAGE types.`);
+                            }
+                            const parts = line.substring('BUTTON:'.length).trim().split('||').map(p => p.trim());
+                            if (parts.length === 4 && parts[0] && parts[1] && parts[2] && parts[3]) {
+                                currentPageData.buttons.push({
+                                    text: parseMarkdownText(parts[0]),
+                                    action: parts[1], // 'go' or 'url'
+                                    target: parts[2], // pageId or URL
+                                    style: parts[3]    // CSS class for button style (e.g., 'primary', 'secondary')
+                                });
+                            } else {
+                                parsingErrors.push(`Line ${lineNumber}: Malformed BUTTON. Expected 'BUTTON:Text || Action || Target || Style'`);
+                            }
+                        } else if (line.startsWith('BUTTON_LAYOUT:')) {
+                             if (currentSection === 'detail') {
+                                parsingErrors.push(`Line ${lineNumber}: BUTTON_LAYOUT is not allowed on DETAIL pages. It is only for PAGE types.`);
+                            }
+                            currentPageData.buttonLayout = line.substring('BUTTON_LAYOUT:'.length).trim(); // 'horizontal' or 'stacked'
+                            if (!['horizontal', 'stacked'].includes(currentPageData.buttonLayout)) {
+                                parsingErrors.push(`Line ${lineNumber}: Invalid BUTTON_LAYOUT. Expected 'horizontal' or 'stacked'.`);
+                            }
+                        } else if (line.startsWith('BULLET_ITEM:')) {
+                            currentPageData.listItems.push({ type: 'bullet', text: parseMarkdownText(line.substring('BULLET_ITEM:'.length).trim()) });
+                        } else if (line.startsWith('NUMBERED_ITEM:')) {
+                            currentPageData.listItems.push({ type: 'numbered', text: parseMarkdownText(line.substring('NUMBERED_ITEM:'.length).trim()) });
+                        }
+                        else {
+                            // Unrecognized line type within a section
+                            parsingErrors.push(`Line ${lineNumber}: Unrecognized line type or misplaced content: '${line}'`);
+                        }
+                    } else {
+                        // Content outside of a PAGE or DETAIL section
+                        parsingErrors.push(`Line ${lineNumber}: Content found outside of a PAGE or DETAIL section: '${line}'`);
+                    }
+                });
+
+                // Save the last parsed page
+                if (currentSection && currentPageData.id) {
+                    guideData[currentPageData.id] = { ...currentPageData };
+                }
+
+                // Critical error check: No pages parsed
+                if (Object.keys(guideData).length === 0) {
+                    parsingErrors.push('No valid PAGE or DETAIL sections found in the configuration. Please ensure you have "## PAGE:" or "## DETAIL:" defined.');
+                }
+
+                console.log('Parsed Guide Data:', guideData);
+                console.log('Parsing Errors:', parsingErrors);
+            }
+
+            // Function to render a specific page
+            function renderPage(pageId) {
+                // Fade out current content before rendering new
+                appContainer.style.opacity = '0';
+
+                setTimeout(() => { // Allow time for fade-out transition
+                    const pageData = guideData[pageId];
+
+                    let pageHtml = '';
+
+                    if (parsingErrors.length > 0) {
+                        pageHtml += `
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6" role="alert">
+                                <strong class="font-bold">Configuration Errors Found!</strong>
+                                <span class="block sm:inline"> Please review your config.</span>
+                                <ul class="list-disc list-inside mt-2">
+                                    ${parsingErrors.map(err => `<li>${err}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }
+
+                    if (!pageData) {
+                        pageHtml += `<div class="page"><p class="text-red-500">Page with ID "${pageId}" not found. Please check your configuration or URL hash.</p></div>`;
+                        appContainer.innerHTML = pageHtml;
+                        appContainer.style.opacity = '1'; // Fade in error message
+                        console.error(`Page with ID "${pageId}" not found in guideData.`);
+                        return;
+                    }
+
+                    // Before updating currentPageId, store it if it's a 'step' page
+                    if (guideData[currentPageId] && guideData[currentPageId].type === 'step') {
+                        lastStepPageId = currentPageId;
+                    }
+                    currentPageId = pageId; // Update current page ID
+
+                    pageHtml += `<div class="page ${pageData.type}-page">`; // Add type specific class
+
+                    // Heading
+                    if (pageData.heading) {
+                        pageHtml += `<h2 class="text-2xl font-semibold mb-4">${pageData.heading}</h2>`;
+                    }
+
+                    // Image (if present)
+                    if (pageData.image) {
+                        pageHtml += `<img src="${pageData.image}" alt="${pageData.heading || 'Guide Image'}" class="w-full h-auto my-5 rounded-md shadow-sm">`;
+                    }
+
+                    // Render content blocks (paragraphs and lists)
+                    let currentListType = null;
+                    pageData.paragraphs.forEach(p => {
+                        // Close any open list before rendering a paragraph
+                        if (currentListType) {
+                            pageHtml += `</${currentListType}>`;
+                            currentListType = null;
+                        }
+                        pageHtml += `<p class="mb-3">${p}</p>`;
+                    });
+
+                    // Render lists
+                    if (pageData.listItems && pageData.listItems.length > 0) {
+                        pageData.listItems.forEach((item, index) => {
+                            const listItemHtml = `<li class="mb-1">${item.text}</li>`;
+                            if (item.type === 'bullet') {
+                                if (currentListType !== 'ul') {
+                                    if (currentListType) pageHtml += `</${currentListType}>`; // Close prev list if different type
+                                    pageHtml += `<ul class="list-disc pl-5 mb-3">`; // Start new unordered list
+                                    currentListType = 'ul';
+                                }
+                                pageHtml += listItemHtml;
+                            } else if (item.type === 'numbered') {
+                                if (currentListType !== 'ol') {
+                                    if (currentListType) pageHtml += `</${currentListType}>`; // Close prev list if different type
+                                    pageHtml += `<ol class="list-decimal pl-5 mb-3">`; // Start new ordered list
+                                    currentListType = 'ol';
+                                }
+                                pageHtml += listItemHtml;
+                            }
+                            // Close the last list if it's the last item
+                            if (index === pageData.listItems.length - 1 && currentListType) {
+                                pageHtml += `</${currentListType}>`;
+                                currentListType = null;
+                            }
+                        });
+                    }
+
+
+                    // More Info Links (only for 'step' pages and if links exist)
+                    if (pageData.type === 'step' && pageData.links && pageData.links.length > 0) {
+                        pageHtml += `
+                            <div class="more-info-box border border-gray-300 bg-blue-50 p-4 mt-5 rounded-md">
+                                <h3 class="text-lg font-medium text-blue-800 mb-2">More Information:</h3>
+                                <ul class="list-none p-0 m-0">
+                        `;
+                        pageData.links.forEach(link => {
+                            // Check if target is an internal page or external URL
+                            const isInternal = guideData[link.target] !== undefined;
+                            const href = isInternal ? `#${link.target}` : link.target;
+                            // Pass the event object to navigatePage to prevent default link behavior
+                            const onclickAttr = isInternal ? `onclick="navigatePage('${link.target}', event)"` : '';
+                            const targetAttr = isInternal ? '' : 'target="_blank" rel="noopener noreferrer"';
+
+
+                            pageHtml += `<li class="mb-1"><a href="${href}" class="text-blue-600 hover:underline" ${targetAttr} ${onclickAttr}>${link.text}</a></li>`;
+                        });
+                        pageHtml += `
+                                </ul>
+                            </div>
+                        `;
+                    }
+
+                    // Action Buttons (only for 'step' pages)
+                    if (pageData.type === 'step' && pageData.buttons && pageData.buttons.length > 0) {
+                        const buttonLayoutClass = pageData.buttonLayout === 'stacked' ? 'stacked' : '';
+                        pageHtml += `<div class="button-container flex ${buttonLayoutClass} gap-3 mt-8 justify-center">`;
+                        pageData.buttons.forEach(button => {
+                            const buttonStyleClass = `button-style-${button.style || 'default-style'}`; // Default style if not specified
+                            // Apply Tailwind classes for base button styling
+                            const baseButtonClasses = "px-5 py-3 rounded-md cursor-pointer text-base font-medium transition-all duration-300 ease-in-out flex-grow text-center";
+
+                            if (button.action === 'go') {
+                                pageHtml += `<button class="${baseButtonClasses} ${buttonStyleClass}" data-action="${button.action}" data-target="${button.target}">${button.text}</button>`;
+                            } else if (button.action === 'url') {
+                                // Open external URLs in a new tab
+                                pageHtml += `<button class="${baseButtonClasses} ${buttonStyleClass}" data-action="${button.action}" data-target="${button.target}">${button.text}</button>`;
+                            }
+                        });
+                        pageHtml += `</div>`;
+                    }
+
+                    // Add Return Button for Detail Pages
+                    if (pageData.type === 'detail') {
+                        const returnTarget = lastStepPageId || 'start'; // Fallback to 'start' if no previous step was recorded
+                        pageHtml += `
+                            <div class="button-container flex justify-center mt-8">
+                                <button class="px-5 py-3 rounded-md cursor-pointer text-base font-medium transition-all duration-300 ease-in-out bg-gray-500 text-white hover:bg-gray-600" data-action="go" data-target="${returnTarget}">
+                                    Return to Previous Screen
+                                </button>
+                            </div>
+                        `;
+                    }
+
+                    pageHtml += `</div>`;
+                    appContainer.innerHTML = pageHtml;
+
+                    // Add event listeners to all buttons (including the new return button)
+                    const buttons = appContainer.querySelectorAll('.button-container button');
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const action = button.dataset.action;
+                            const target = button.dataset.target;
+
+                            if (action === 'go') {
+                                renderPage(target); // Navigate to another internal page
+                            } else if (action === 'url') {
+                                window.open(target, '_blank'); // Open URL in new tab
+                            }
+                        });
+                    });
+
+                    appContainer.style.opacity = '1'; // Fade in new content
+                }, 500); // Wait for 500ms (transition duration)
+            }
+
+            // Global navigation function for links (used by more-info-box)
+            // This needs to be available globally because it's set as an inline onclick
+            window.navigatePage = function(pageId, event) {
+                if (event) {
+                    event.preventDefault(); // Prevent the default link behavior (e.g., hash navigation)
+                }
+                renderPage(pageId);
+            };
+
+            // Handle browser back/forward buttons (basic history management)
+            window.addEventListener('popstate', (event) => {
+                if (event.state && event.state.pageId) {
+                    renderPage(event.state.pageId);
+                } else if (guideData[currentPageId]) { // If no specific state, try to re-render current or default
+                     renderPage(currentPageId); // Or a default 'start' page if that's desired
+                }
+            });
+
+            // Update URL hash for direct linking and basic history
+            function updateUrlHash(pageId) {
+                history.pushState({ pageId: pageId }, '', `#${pageId}`);
+            }
+
+            // Modify renderPage to also update URL hash
+            const originalRenderPage = renderPage;
+            renderPage = function(pageId) {
+                originalRenderPage(pageId);
+                updateUrlHash(pageId);
+            };
+
+            // New async function to fetch and parse the external config file
+            async function loadExternalConfig() {
+                try {
+                    // Display a loading message
+                    appContainer.innerHTML = '<p class="text-center text-gray-600">Loading guide configuration...</p>';
+
+                    // Fetch the content of the config.txt file
+                    const response = await fetch('config.txt');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const configText = await response.text();
+
+                    // Parse the fetched text and render the initial page
+                    parseConfig(configText);
+
+                    // Check for parsing errors before rendering
+                    if (parsingErrors.length === 0) {
+                        // Render the page from hash if it exists, otherwise default to 'start'
+                        const initialPageId = window.location.hash.substring(1);
+                        renderPage(guideData[initialPageId] ? initialPageId : currentPageId);
+                    } else {
+                        // If there are parsing errors, render the error page
+                        renderPage(currentPageId);
+                    }
+
+                } catch (error) {
+                    console.error('Error loading or parsing external config:', error);
+                    appContainer.innerHTML = `
+                        <div class="page text-center">
+                            <h2 class="text-red-500 font-bold mb-4">Error</h2>
+                            <p class="text-red-500">Failed to load the guide configuration. Please ensure 'config.txt' exists and is correctly formatted.</p>
+                            <p class="text-sm text-gray-500 mt-2">Check the browser console for more details.</p>
+                        </div>
+                    `;
+                }
+            }
+
+            // Initial call to load the external config file
+            loadExternalConfig();
+        });
+    </script>
+</body>
+</html>
+

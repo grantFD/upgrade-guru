@@ -1,0 +1,68 @@
+PAGE:start
+HEADING:Welcome to Our Guide!
+PARAGRAPH:This interactive guide will walk you through the process of setting up your new device. Please click "Next Step" to begin.
+IMAGE:https://via.placeholder.com/600x300/F0F8FF/808080?text=Welcome+Image
+LINK: Get ready before you begin || setup-prerequisites
+BUTTON_LAYOUT:horizontal
+BUTTON:Next Step > || go || setup-device || primary
+BUTTON:Read More About Us || url || https://example.com/about || secondary
+
+DETAIL:setup-prerequisites
+HEADING:Prerequisites for Setup
+PARAGRAPH:Before you begin, ensure you have a stable internet connection and access to a power outlet.
+PARAGRAPH:You will also need your device's serial number, which can usually be found on the back or bottom of the unit.
+IMAGE:https://via.placeholder.com/400x200/FFF0F5/808080?text=Prerequisites
+
+PAGE:setup-device
+HEADING:Setting Up Your Device
+PARAGRAPH:First, unbox your device and connect it to a power source. Wait for the power indicator light to turn solid green.
+PARAGRAPH:Next, connect your device to your home network using either Wi-Fi or an Ethernet cable. Refer to your device's manual for specific instructions on network configuration.
+BULLET_ITEM:Ensure your device is fully charged.
+BULLET_ITEM:Have your Wi-Fi password ready.
+BULLET_ITEM:Check for any software updates after initial setup.
+IMAGE:https://via.placeholder.com/600x300/F5FFFA/808080?text=Device+Setup
+LINK:What is an Ethernet Cable? || network-basics
+LINK:Troubleshooting Power Issues || power-troubleshooting
+BUTTON_LAYOUT:stacked
+BUTTON:Next: Configure Settings || go || configure-settings || primary
+BUTTON:Go Back || go || start || secondary
+BUTTON:Visit Support Website || url || https://support.example.com || warning
+
+DETAIL:network-basics
+HEADING:Understanding Network Connections
+PARAGRAPH:An Ethernet cable provides a wired connection to your network, often offering more stable and faster speeds than Wi-Fi.
+PARAGRAPH:Wi-Fi provides wireless connectivity, allowing you more flexibility in device placement.
+PARAGRAPH:For more detailed information, consult our network guide.
+LINK:Advanced Network Setup || advanced-network-setup
+
+DETAIL:power-troubleshooting
+HEADING:Power Troubleshooting Steps
+PARAGRAPH:If your device is not powering on, ensure the power cable is securely plugged into both the device and the outlet.
+PARAGRAPH:Try a different power outlet or power cable if available. If the issue persists, contact support.
+
+PAGE:configure-settings
+HEADING:Configuring Device Settings
+PARAGRAPH:Access the device's web interface by typing its IP address into your browser. The default IP address is usually 192.168.1.1.
+NUMBERED_ITEM:Open your web browser.
+NUMBERED_ITEM:Type the device's IP address (e.g., 192.168.1.1) into the address bar.
+NUMBERED_ITEM:Press Enter to access the login page.
+PARAGRAPH:Log in using the default credentials (often admin/admin, but check your manual). You will then be able to customize various settings, including your device name, time zone, and security preferences.
+IMAGE:https://via.placeholder.com/600x300/F0FFFF/808080?text=Settings+Config
+LINK:How to Find Your Device's IP || find-ip
+BUTTON_LAYOUT:horizontal
+BUTTON:Finish Guide || go || guide-complete || primary
+BUTTON:Review Setup || go || setup-device || secondary
+
+DETAIL:find-ip
+HEADING:Finding Your Device's IP Address
+PARAGRAPH:You can usually find your device's IP address by checking your router's connected devices list, or by using a network scanning tool on your computer or smartphone.
+PARAGRAPH:Some devices may also display their IP address on a connected screen or through an indicator light sequence.
+
+PAGE:guide-complete
+HEADING:Congratulations! Your Device is Ready!
+PARAGRAPH:You have successfully set up and configured your new device. Enjoy!
+PARAGRAPH:If you have any further questions, please don't hesitate to contact our support team.
+IMAGE:https://via.placeholder.com/600x300/F8F8FF/808080?text=Completed!
+BUTTON_LAYOUT:horizontal
+BUTTON:Start Over || go || start || secondary
+
