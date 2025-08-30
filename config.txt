@@ -3,32 +3,26 @@ HEADING:The life expectancy of a smartphone
 PARAGRAPH:You might be surprised that until recently many experts say a smartphone will last around 2.5 years for an average user. They expect flagship models, especially iPhones, to last 4-10 years and Samsungs 3-6 years. Budget and mid-range Androids often have shorter support cycles and component durability, potentially struggling after 2-3 years. Expect to replace cheaper phones more frequently.
 PARAGRAPH:In recent times manufacturers have stepped up their game, partially in response to consumer laws and because of battery and technology improvements. Based on this we can expect the average to increase in the future, perhaps to around 4- 5 years.
 LINK:new EU Smartphone rules June 25 || https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en
-HEADING:Four Signs your phone is too old
+PARAGRAPH:**Four Signs your phone is too old**
 PARAGRAPH:There's no single "too old" age for a phone, as it really depends on individual needs and usage. Many factors affect a smartphone’s lifespan, including the condition of the screen, the hardware, the battery’s health, and how you treat it.
-
 PARAGRAPH:However, there are four key indicators that your phone might be past its prime:
 BULLET_ITEM:Vulnerable: no more Software/Security updates
 BULLET_ITEM:Exhausted: Battery drains rapidly
 BULLET_ITEM:Unreliable: hardware issues
 BULLET_ITEM:Annoying: It no longer meets your needs
-
 PARAGRAPH:Click the next button to find out more about each of these
 BUTTON_LAYOUT:horizontal
 BUTTON:Go to Next Step || go || vulnerable || primary
 
 ## PAGE:vulnerable
 HEADING:1. Vulnerable: no more software or security updates
-PARAGRAPH:This is a critical indicator that it’s time to upgrade.. When your manufacturer stops providing OS and security updates, your phone becomes vulnerable to new threats and may not be compatible with newer apps.
-PARAGRAPH:The majority of malware that affects mobile devices relies on out-of-date software.
-PARAGRAPH:If you have a device with the latest security updates then you are much safer.
-HEADING:Android Phones
+PARAGRAPH:This is a critical indicator that it’s time to upgrade.. When your manufacturer stops providing OS and security updates, your phone becomes vulnerable to new threats and may not be compatible with newer apps. The majority of malware that affects mobile devices relies on out-of-date software. If you have a device with the latest security updates then you are much safer.
+PARAGRAPH:**Android Phones**
 PARAGRAPH:For Android phones there are two levels of OS support: Android upgrades (which come from Google with extra features added by the manufacturer (such as Samsung) and security updates. The frequency of Android upgrades depends on the manufacturer and age of the device, but may be every year or so until the device reaches End of life. Security updates are essential for maintaining the security and privacy of a device. They can come quite frequently, depending on the model and its age
 PARAGRAPH:Manufacturers only pledge to support them for a certain number of years and after that they stop receiving security patches as companies shift their priorities towards newer products.In the past, Android device manufacturers have only provided updates for a fairly short time, typically around 2 years after a device was first released. However, following several recent high profile security vulnerabilities and hacks, phone manufacturers are now providing security updates for much longer. For example Samsung’s Galaxy flagship models (starting with the Galaxy S24 series) are eligible for Android, One UI, and security updates for seven years.
 PARAGRAPH:At the time of writing (July 2025) anything running Android versions 12 or older is no longer getting security patches from Google. Versions 13 up to the latest Android 16 are fully supported.
-HEADING:Apple iPhones
-PARAGRAPH:Apple is known for providing long-term software upgrades and security updates for its iPhone models.
-PARAGRAPH:While they don't always provide a specific end-of-support date, generally, iPhones receive major iOS updates for about 5-7 years after their release, and security updates often continue for a period after major OS updates cease.
-PARAGRAPH:Recent regulations, such as those in the UK, require manufacturers like Apple to provide a minimum of five years of security updates from the first supply date.
+PARAGRAPH:**Apple iPhones**
+PARAGRAPH:Apple is known for providing long-term software upgrades and security updates for its iPhone models. While they don't always provide a specific end-of-support date, generally, iPhones receive major iOS updates for about 5-7 years after their release, and security updates often continue for a period after major OS updates cease.Recent regulations, such as those in the UK, require manufacturers like Apple to provide a minimum of five years of security updates from the first supply date.
 PARAGRAPH:At the time of writing (July 2025) Apple models up to iPhone X (10) are obsolete and no longer supported.
 PARAGRAPH:So is your phone still supported?
 BUTTON_LAYOUT:horizontal
