@@ -1,5 +1,5 @@
-##intro
-The life expectancy of a smartphone
+##PAGE:intro
+HEADING:The life expectancy of a smartphone
 PARAGRAPH:You might be surprised that until recently many experts say a smartphone will last around 2.5 years for an average user.
 PARAGRAPH:They expect flagship models, especially iPhones, to last 4-10 years and Samsungs 3-6 years.
 PARAGRAPH:Budget and mid-range Androids often have shorter support cycles and component durability, potentially struggling after 2-3 years.
@@ -18,7 +18,7 @@ BULLET_ITEM:Annoying: It no longer meets your needs
 PARAGRAPH:Click the next button to find out more about each of these
 BUTTON:Go to Next Step || go || vulnerable || green
 
-##vulnerable
+##PAGE:vulnerable
 HEADING:1. Vulnerable: no more software or security updates
 PARAGRAPH:This is a critical indicator that it’s time to upgrade.. When your manufacturer stops providing OS and security updates, your phone becomes vulnerable to new threats and may not be compatible with newer apps.
 PARAGRAPH:The majority of malware that affects mobile devices relies on out-of-date software.
@@ -77,7 +77,7 @@ PARAGRAPH:It's generally recommended to keep your iPhone updated to the latest a
 HEADING:Check Your Device:
 PARAGRAPH:The best way to check if your specific iPhone model is receiving the latest security updates is to go to Settings > General > Software Update on your device.
 HEADING:Currently supported models (Jul 2025)
-HEADING:Models currently supporting the latest iOS (iOS 18 as of June 2025) and receiving security updates (note iPhone 17/26 due Sep 25):
+PARAGRAPH:Models currently supporting the latest iOS (iOS 18 as of June 2025) and receiving security updates (note iPhone 17/26 due Sep 25):
 BULLET_ITEM:iPhone 16 series: (Pro Max, Pro, Plus, 16) - Expected support until at least 2031 (note 16e until 2032)
 BULLET_ITEM:iPhone 15 series: (Pro Max, Pro, Plus, 15) - Expected support until at least 2030 .
 BULLET_ITEM:iPhone 14 series: (Pro Max, Pro, Plus, 14) - Expected support until at least 2029 .
@@ -91,7 +91,7 @@ PARAGRAPH:They will not get the next major iOS version.
 HEADING:Models that may still receive critical security updates on older iOS versions:
 PARAGRAPH:While not receiving the latest iOS versions, Apple sometimes provides critical security patches for devices on older iOS versions.7 For example, iPhones that were updated to iOS 15 or iOS 16 but can't run iOS 18. This support for older iOS versions is less predictable and typically addresses severe vulnerabilities.
 
-##exhausted
+##PAGE:exhausted
 HEADING:2. Exhausted: rapid battery drain
 PARAGRAPH:If your phone's battery dies quickly, even with minimal use, or needs constant recharging, its capacity has likely degraded significantly.
 PARAGRAPH:Batteries typically lose efficiency after 500-1000 charge cycles (2-6 years).
@@ -166,7 +166,7 @@ BULLET_ITEM:Disable Haptic Feedback/Vibrations: Reduce or turn off keyboard vibr
 BULLET_ITEM:Limit "OK Google" Detection: Consider turning off "Hey Google" or "OK Google" voice detection if you don't use it frequently.
 BULLET_ITEM:Restart Your Phone Regularly: A simple reboot can sometimes resolve temporary software glitches that might be draining your battery.
 
-##tired
+##PAGE:tired
 HEADING:3. Tired: hardware issues
 PARAGRAPH:There are many reasons why the performance of an older phone may lead you to decide that it is “too old”:
 HEADING:Can’t keep up
@@ -188,10 +188,10 @@ PARAGRAPH:So is your phone free of hardware issues?
 BUTTON:No - Replace || go || replace || warning
 BUTTON:Yes- Go to Next Step || go || annoying || green
 
-##annoying
+##PAGE:annoying
 HEADING:4. Annoying: It no longer meets your needs
 PARAGRAPH:If your phone no longer reliably performs the tasks you need it for, and the issues are not easily (or affordably) fixable, then it's probably "too old" for you.
-HEADING:Signs can include:
+PARAGRAPH:Signs can include:
 BULLET_ITEM:Insufficient Storage Space: Constantly having to delete photos, videos, or apps to free up space is a sign you need more storage, which newer phones typically offer.
 BULLET_ITEM:Poor Camera Quality: If photography is important to you and your photos are consistently blurry, grainy, or lack detail compared to newer phones, it's a clear sign of outdated camera technology.
 LINK:How to get rid of an old phone || Ditching
