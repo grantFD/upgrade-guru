@@ -6,7 +6,7 @@ PARAGRAPH:Budget and mid-range Androids often have shorter support cycles and co
 PARAGRAPH:Expect to replace cheaper phones more frequently.
 PARAGRAPH:In recent times manufacturers have stepped up their game, partially in response to consumer laws and because of battery and technology improvements.
 PARAGRAPH:Based on this we can expect the average to increase in the future, perhaps to around 4- 5 years.
-LINK:new EU Smartphone rules June 25 || [https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en](https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en)
+LINK:new EU Smartphone rules June 25 || https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en
 HEADING:4 Signs your phone is too old
 PARAGRAPH:There's no single "too old" age for a phone, as it really depends on individual needs and usage.
 PARAGRAPH:Many factors affect a smartphone’s lifespan, including the condition of the screen, the hardware, the battery’s health, and how you treat it.
