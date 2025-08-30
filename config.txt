@@ -1,68 +1,273 @@
-## PAGE:start
-HEADING:Welcome to Our Guide!
-PARAGRAPH:This interactive guide will walk you through the process of setting up your new device. Please click "Next Step" to begin.
-IMAGE:https://via.placeholder.com/600x300/F0F8FF/808080?text=Welcome+Image
-LINK: Get ready before you begin || setup-prerequisites
-BUTTON_LAYOUT:horizontal
-BUTTON:Next Step > || go || setup-device || primary
-BUTTON:Read More About Us || url || https://example.com/about || secondary
+##intro
+The life expectancy of a smartphone
+PARAGRAPH:You might be surprised that until recently many experts say a smartphone will last around 2.5 years for an average user.
+PARAGRAPH:They expect flagship models, especially iPhones, to last 4-10 years and Samsungs 3-6 years.
+PARAGRAPH:Budget and mid-range Androids often have shorter support cycles and component durability, potentially struggling after 2-3 years.
+PARAGRAPH:Expect to replace cheaper phones more frequently.
+PARAGRAPH:In recent times manufacturers have stepped up their game, partially in response to consumer laws and because of battery and technology improvements.
+PARAGRAPH:Based on this we can expect the average to increase in the future, perhaps to around 4- 5 years.
+LINK:new EU Smartphone rules June 25 || [https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en](https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en)
+HEADING:4 Signs your phone is too old
+PARAGRAPH:There's no single "too old" age for a phone, as it really depends on individual needs and usage.
+PARAGRAPH:Many factors affect a smartphone’s lifespan, including the condition of the screen, the hardware, the battery’s health, and how you treat it.
+PARAGRAPH:However, there are four key indicators that your phone might be past its prime:
+BULLET_ITEM:Vulnerable: no more Software/Security updates
+BULLET_ITEM:Exhausted: Battery drains rapidly
+BULLET_ITEM:Unreliable: hardware issues
+BULLET_ITEM:Annoying: It no longer meets your needs
+PARAGRAPH:Click the next button to find out more about each of these
+BUTTON:Go to Next Step || go || vulnerable || green
 
-## DETAIL:setup-prerequisites
-HEADING:Prerequisites for Setup
-PARAGRAPH:Before you begin, ensure you have a stable internet connection and access to a power outlet.
-PARAGRAPH:You will also need your device's serial number, which can usually be found on the back or bottom of the unit.
-IMAGE:https://via.placeholder.com/400x200/FFF0F5/808080?text=Prerequisites
+##vulnerable
+HEADING:1. Vulnerable: no more software or security updates
+PARAGRAPH:This is a critical indicator that it’s time to upgrade.. When your manufacturer stops providing OS and security updates, your phone becomes vulnerable to new threats and may not be compatible with newer apps.
+PARAGRAPH:The majority of malware that affects mobile devices relies on out-of-date software.
+PARAGRAPH:If you have a device with the latest security updates then you are much safer.
+HEADING:Android Phones
+PARAGRAPH:For Android phones there are two levels of OS support: Android upgrades (which come from Google with extra features added by the manufacturer (such as Samsung) and security updates. The frequency of Android upgrades depends on the manufacturer and age of the device, but may be every year or so until the device reaches End of life. Security updates are essential for maintaining the security and privacy of a device. They can come quite frequently, depending on the model and its age
+PARAGRAPH:Manufacturers only pledge to support them for a certain number of years and after that they stop receiving security patches as companies shift their priorities towards newer products.
+PARAGRAPH:In the past, Android device manufacturers have only provided updates for a fairly short time, typically around 2 years after a device was first released.
+PARAGRAPH:However, following several recent high profile security vulnerabilities and hacks, phone manufacturers are now providing security updates for much longer.
+PARAGRAPH:For example Samsung’s Galaxy flagship models (starting with the Galaxy S24 series) are eligible for Android, One UI, and security updates for seven years.
+PARAGRAPH:At the time of writing (July 2025) anything running Android versions 12 or older is no longer getting security patches from Google.
+PARAGRAPH:Versions 13 to the latest Android 16 are fully supported..
+HEADING:Apple iPhones
+PARAGRAPH:Apple is known for providing long-term software upgrades and security updates for its iPhone models.
+PARAGRAPH:While they don't always provide a specific end-of-support date, generally, iPhones receive major iOS updates for about 5-7 years after their release, and security updates often continue for a period after major OS updates cease.
+PARAGRAPH:Recent regulations, such as those in the UK, require manufacturers like Apple to provide a minimum of five years of security updates from the first supply date.
+PARAGRAPH:At the time of writing (July 2025) Apple models up to iPhone X (10) are obsolete and no longer supported.
+LINK:How long does apple support iphones || [https://www.refurb.me/blog/how-long-does-apple-support-iphones](https://www.refurb.me/blog/how-long-does-apple-support-iphones)
+LINK:Samsung end of life dates || [https://endoflife.date/samsung-mobile](https://endoflife.date/samsung-mobile)
+LINK:How to get rid of an old phone || ditch
+LINK:How to check an Android || How_to_Check_your_android
+LINK:How to check an iPhone || Check_your_iphone_version
+PARAGRAPH:So is your phone still supported?
+BUTTON:No - Replace || go || replace || warning
+BUTTON:Yes- Go to Next Step || go || exhausted || green
 
-## PAGE:setup-device
-HEADING:Setting Up Your Device
-PARAGRAPH:First, unbox your device and connect it to a power source. Wait for the power indicator light to turn solid green.
-PARAGRAPH:Next, connect your device to your home network using either Wi-Fi or an Ethernet cable. Refer to your device's manual for specific instructions on network configuration.
-BULLET_ITEM:Ensure your device is fully charged.
-BULLET_ITEM:Have your Wi-Fi password ready.
-BULLET_ITEM:Check for any software updates after initial setup.
-IMAGE:https://via.placeholder.com/600x300/F5FFFA/808080?text=Device+Setup
-LINK:What is an Ethernet Cable? || network-basics
-LINK:Troubleshooting Power Issues || power-troubleshooting
-BUTTON_LAYOUT:stacked
-BUTTON:Next: Configure Settings || go || configure-settings || primary
-BUTTON:Go Back || go || start || secondary
-BUTTON:Visit Support Website || url || https://support.example.com || warning
+##DETAIL:How_to_Check_your_android
+HEADING:How to check whether your Android phone is running the latest updates
+PARAGRAPH:Here's how to check the most relevant update information on your Android phone:
+HEADING:1. Check the Security Update Level:
+PARAGRAPH:This is the most direct way to see how recently your phone received critical security fixes.
+NUMBERED_ITEM:Open your device's Settings app.
+NUMBERED_ITEM:Scroll down and tap on Security & privacy (or similar, like "Security" or "Security & lock screen").
+NUMBERED_ITEM:Tap on System & updates (or similar).
+NUMBERED_ITEM:Look for Security update or Android security update .
+NUMBERED_ITEM:You'll see a date here (e.g., "July 5, 2025"). This date indicates the last security patch your phone received.
+NUMBERED_ITEM:You might also find a Google Play system update section, which also shows a date for updates to core Android components delivered via the Play Store.
+PARAGRAPH:What this date means: Google typically releases monthly security patches.
+PARAGRAPH:If your phone's security update date is more than 2-3 months old, it's a strong indicator that your device is no longer receiving regular security updates and could be at higher risk.
+HEADING:2. Check your Android Version:
+PARAGRAPH:This tells you the last major Android OS version your phone is running.
+NUMBERED_ITEM:Open your device's Settings app.
+NUMBERED_ITEM:Scroll down and tap About phone or About tablet (the exact wording may vary depending on your device and Android version).
+NUMBERED_ITEM:Look for "Android version." This will tell you the major Android version number (e.g., "Android 14").
+NUMBERED_ITEM:You might also see a "Build number" which changes with each update, but it doesn't give a specific date easily.
+HEADING:To check for new updates (and see if any are available):
+NUMBERED_ITEM:Open your device's Settings app.
+NUMBERED_ITEM:Tap System .
+NUMBERED_ITEM:Tap Software update or System update .
+NUMBERED_ITEM:Tap Check for updates . Your phone will then search for any available updates and tell you if your system is up to date.
+PARAGRAPH:At the time of writing (July 2025) anything running Android versions older than Android 13 is no longer getting security patches from Google.
 
-## DETAIL:network-basics
-HEADING:Understanding Network Connections
-PARAGRAPH:An Ethernet cable provides a wired connection to your network, often offering more stable and faster speeds than Wi-Fi.
-PARAGRAPH:Wi-Fi provides wireless connectivity, allowing you more flexibility in device placement.
-PARAGRAPH:For more detailed information, consult our network guide.
-LINK:Advanced Network Setup || advanced-network-setup
+##DETAIL:Check_your_iphone_version
+HEADING:How to check whether your Apple iphone is running the latest updates
+PARAGRAPH:It's generally recommended to keep your iPhone updated to the latest available iOS version to ensure you have the most recent security patches and features.
+HEADING:Check Your Device:
+PARAGRAPH:The best way to check if your specific iPhone model is receiving the latest security updates is to go to Settings > General > Software Update on your device.
+HEADING:Currently supported models (Jul 2025)
+HEADING:Models currently supporting the latest iOS (iOS 18 as of June 2025) and receiving security updates (note iPhone 17/26 due Sep 25):
+BULLET_ITEM:iPhone 16 series: (Pro Max, Pro, Plus, 16) - Expected support until at least 2031 (note 16e until 2032)
+BULLET_ITEM:iPhone 15 series: (Pro Max, Pro, Plus, 15) - Expected support until at least 2030 .
+BULLET_ITEM:iPhone 14 series: (Pro Max, Pro, Plus, 14) - Expected support until at least 2029 .
+BULLET_ITEM:iPhone SE (3rd Gen) - Expected support until at least 2029 .
+BULLET_ITEM:iPhone 13 series: (Pro Max, Pro, Mini, 13) - Expected support until at least 2028 .
+BULLET_ITEM:iPhone 12 series: (Pro Max, Pro, Mini, 12) - Expected support until at least 2027 .
+BULLET_ITEM:iPhone SE (2nd Gen) - Expected support until at least 2027 .
+BULLET_ITEM:iPhone 11 series: (Pro Max, Pro, 11) - Expected support until at least 2026 .
+BULLET_ITEM:iPhone XS / XS Max /XR - Expected support ending 2025 (as they are compatible with iOS 18, they might receive updates a bit longer, but are considered to be reaching the end of their major update cycle).
+PARAGRAPH:They will not get the next major iOS version.
+HEADING:Models that may still receive critical security updates on older iOS versions:
+PARAGRAPH:While not receiving the latest iOS versions, Apple sometimes provides critical security patches for devices on older iOS versions.7 For example, iPhones that were updated to iOS 15 or iOS 16 but can't run iOS 18. This support for older iOS versions is less predictable and typically addresses severe vulnerabilities.
 
-## DETAIL:power-troubleshooting
-HEADING:Power Troubleshooting Steps
-PARAGRAPH:If your device is not powering on, ensure the power cable is securely plugged into both the device and the outlet.
-PARAGRAPH:Try a different power outlet or power cable if available. If the issue persists, contact support.
+##exhausted
+HEADING:2. Exhausted: rapid battery drain
+PARAGRAPH:If your phone's battery dies quickly, even with minimal use, or needs constant recharging, its capacity has likely degraded significantly.
+PARAGRAPH:Batteries typically lose efficiency after 500-1000 charge cycles (2-6 years).
+HEADING:iPhone batteries are rated to hold 80% of their capacity for up to 500 charge cycles, which means roughly 18-24 months for most users.
+PARAGRAPH:After that, you may notice performance issues with your phone, which means it’s time for a new battery.
+HEADING:On some Samsung devices you will get a notification message on your device warning of battery deterioration.
+PARAGRAPH:If you’re experiencing these symptoms then
+BULLET_ITEM:Check your battery health
+BULLET_ITEM:If it’s poor then buy a new battery
+BULLET_ITEM:If it’s still got some life in it then here are some things you can do to eke it out for longer
+PARAGRAPH:Whatever the situation you should always give your battery the best chance of a long life by avoiding regularly draining your battery to 0% or charging it to 100% all the time.
+PARAGRAPH:Aim to keep it between 20% and 80%. On an Android you can set an upper limit under Settings > Battery and Battery protection.
+PARAGRAPH:On an iPhones you can go to Settings > Battery > Battery health and Charging then turn on Optimized Battery Charging.
+PARAGRAPH:On newer models running iOS 18 or later (iPhones 15 on) you can also set limits by going to Settings > Battery > Charging.
+LINK:How to eke out your battery life || Eke_out
+LINK:How to check your battery health || Check_your_battery
+PARAGRAPH:So is your battery OK?
+BUTTON:No - Replace || go || replace || warning
+BUTTON:Yes- Go to Next Step || go || tired || green
 
-## PAGE:configure-settings
-HEADING:Configuring Device Settings
-PARAGRAPH:Access the device's web interface by typing its IP address into your browser. The default IP address is usually 192.168.1.1.
-NUMBERED_ITEM:Open your web browser.
-NUMBERED_ITEM:Type the device's IP address (e.g., 192.168.1.1) into the address bar.
-NUMBERED_ITEM:Press Enter to access the login page.
-PARAGRAPH:Log in using the default credentials (often admin/admin, but check your manual). You will then be able to customize various settings, including your device name, time zone, and security preferences.
-IMAGE:https://via.placeholder.com/600x300/F0FFFF/808080?text=Settings+Config
-LINK:How to Find Your Device's IP || find-ip
-BUTTON_LAYOUT:horizontal
-BUTTON:Finish Guide || go || guide-complete || primary
-BUTTON:Review Setup || go || setup-device || secondary
+##DETAIL:Buying a new battery
+PARAGRAPH:If you've tried the steps to eke out your battery (see links below) and are still experiencing significant battery drain, you might need a new battery to resolve the problem.
+PARAGRAPH:Contact your device manufacturer or the retailer where you purchased the phone for further assistance and to get a quote for a replacement battery.
+PARAGRAPH:It might be cheaper to upgrade to a newer model that offers improved battery technology and capacity.
+PARAGRAPH:If you have paid the extra for AppleCare+ and your product's battery holds less than 80 percent of its original capacity then you may be eligible for a battery replacement at no additional cost.
+PARAGRAPH:If you don’t then Apple in NZ will replace your battery for a few hundred dollars.
+LINK:Apple battery replacement || [https://support.apple.com/en-nz/iphone/repair/battery-replacement](https://support.apple.com/en-nz/iphone/repair/battery-replacement)
+LINK:Samsung battery information || [https://www.samsung.com/nz/support/galaxy-battery/](https://www.samsung.com/nz/support/galaxy-battery/)
 
-## DETAIL:find-ip
-HEADING:Finding Your Device's IP Address
-PARAGRAPH:You can usually find your device's IP address by checking your router's connected devices list, or by using a network scanning tool on your computer or smartphone.
-PARAGRAPH:Some devices may also display their IP address on a connected screen or through an indicator light sequence.
+##DETAIL:Check_your_battery
+HEADING:How to check your battery health
+HEADING:Apple iPhone
+PARAGRAPH:To Review your iPhone battery health Go to Settings > Battery, then tap Battery Health & Charging.
+PARAGRAPH:The iPhone displays information about your battery’s capacity, peak performance, and whether your battery needs to be serviced.
+HEADING:Samsung Android
+PARAGRAPH:On some Samsung devices you will get a notification message on your device warning of battery deterioration.
+PARAGRAPH:You can also use the free Samsung Members application to run tests of your phone, including the battery condition.
+PARAGRAPH:Unfortunately it does not show a count of the number of battery charge cycles.
+PARAGRAPH:Samsung says if you’re experiencing frequent shutdowns, visit your nearest service Samsung Support Centre for advice.
+PARAGRAPH:It may be time for a battery check-up, “as batteries are consumables, which naturally wear out over time.
 
-## PAGE:guide-complete
-HEADING:Congratulations! Your Device is Ready!
-PARAGRAPH:You have successfully set up and configured your new device. Enjoy!
-PARAGRAPH:If you have any further questions, please don't hesitate to contact our support team.
-IMAGE:https://via.placeholder.com/600x300/F8F8FF/808080?text=Completed!
-BUTTON_LAYOUT:horizontal
-BUTTON:Start Over || go || start || secondary
+##DETAIL:Eke_out
+HEADING:Things you can do to eke out your battery life.
+HEADING:Optimize Screen Settings:
+BULLET_ITEM:Reduce Screen Brightness: Lower your screen brightness or enable "Adaptive Brightness" (Auto-Brightness) to automatically adjust it based on ambient light.
+BULLET_ITEM:Shorten Screen Timeout: Set your screen to turn off after a shorter period of inactivity (e.g., 15-30 seconds).
+BULLET_ITEM:Use Dark Mode/Theme: If your phone has an OLED or AMOLED display, using a dark theme (where black pixels are truly off) can significantly save battery.
+BULLET_ITEM:Disable Always-On Display: Turn off this feature if you don't need continuous time and notification glances.
+BULLET_ITEM:Reduce Screen Refresh Rate: If your phone has a high refresh rate display, consider lowering it to a standard 60Hz if battery life is a priority.
+BULLET_ITEM:Avoid Live Wallpapers: Use static wallpapers instead.
+HEADING:Manage Apps and Background Activity:
+BULLET_ITEM:Identify Battery-Hungry Apps: Go to your phone's Settings > Battery > Battery Usage to see which apps are consuming the most power.
+BULLET_ITEM:Restrict Background Activity: For apps you don't need running constantly, restrict their background data or activity in app settings.
+BULLET_ITEM:Close Unused Apps: While Android manages RAM well, closing apps you're truly finished with can prevent them from consuming background resources.
+BULLET_ITEM:Limit Push Notifications: Turn off notifications for non-essential apps or adjust their settings to reduce frequency.
+BULLET_ITEM:Uninstall Unused Apps: Remove apps you no longer need.
+HEADING:Optimize Connectivity:
+BULLET_ITEM:Turn off Wi-Fi, Bluetooth, and GPS: Disable these when you're not actively using them.
+BULLET_ITEM:Use Wi-Fi over Mobile Data: When a stable Wi-Fi connection is available, use it as it's generally more power-efficient than mobile data, especially 4G/5G in weak signal areas.
+BULLET_ITEM:Enable Airplane Mode: If you're in an area with no signal (e.g., underground, remote areas), turn on Airplane Mode to prevent your phone from constantly searching for a network.
+BULLET_ITEM:Disable "Wi-Fi scanning" and "Bluetooth scanning": These options, often found under location settings, allow apps to scan for Wi-Fi networks and Bluetooth devices even when Wi-Fi/Bluetooth is off, consuming extra power.
+HEADING:Maintain Software and Battery Health:
+BULLET_ITEM:Keep Software Updated: Regularly check for and install Android system updates and app updates.
+BULLET_ITEM:Use Battery Saver Mode: Most Android phones have a "Battery Saver" or "Power Saving" mode that limits certain functions to extend battery life.
+PARAGRAPH:Use it when your battery is low or you need to maximize usage.
+BULLET_ITEM:Avoid Extreme Temperatures: Do not expose your phone to excessive heat (e.g., direct sunlight, hot car) or extreme cold, as this can damage the battery.
+BULLET_ITEM:Charge Wisely: Avoid regularly draining your battery to 0% or charging it to 100% all the time.
+BULLET_ITEM:Aim to keep it between 20% and 80% for optimal long-term health.
+BULLET_ITEM:Use the charger that came with your phone or a reputable, compatible alternative.
+HEADING:Other Tips:
+BULLET_ITEM:Disable Haptic Feedback/Vibrations: Reduce or turn off keyboard vibrations and haptic feedback for navigation.
+BULLET_ITEM:Limit "OK Google" Detection: Consider turning off "Hey Google" or "OK Google" voice detection if you don't use it frequently.
+BULLET_ITEM:Restart Your Phone Regularly: A simple reboot can sometimes resolve temporary software glitches that might be draining your battery.
 
+##tired
+HEADING:3. Tired: hardware issues
+PARAGRAPH:There are many reasons why the performance of an older phone may lead you to decide that it is “too old”:
+HEADING:Can’t keep up
+BULLET_ITEM:Not Compatible with Latest Networks (e.g., 5G): If you rely on mobile data and your phone can't connect to newer, faster networks like 5G, you're missing out on significant speed improvements.
+PARAGRAPH:If you’re still using 3G then you definitely need to upgrade your phone before this network is retried in late 2025. To find out the status of your phone free-text ‘3G’ to 550 to receive a report on your mobile device.
+BULLET_ITEM:Slow Performance/Lagging: Apps take forever to open, multitasking is a struggle, or the phone feels generally sluggish even after restarts or clearing storage.
+PARAGRAPH:This indicates the processor and RAM can't keep up with modern demands.
+PARAGRAPH:Applications tend to add features and get larger over time.
+PARAGRAPH:For example you’ll need more CPU to run today's WhatsApp compared to the version available two years ago.
+BULLET_ITEM:Frequent App Crashes: If apps are constantly freezing or crashing, it might be due to insufficient memory or outdated system software that can't handle the demands of newer, more resource-intensive applications.
+HEADING:Unreliable
+BULLET_ITEM:Overheating: While some warmth is normal, if your phone gets excessively hot during normal use or even when idle, it could indicate internal components are struggling or failing, potentially posing a safety hazard.
+BULLET_ITEM:Random Restarts/Freezing: If your phone reboots itself unexpectedly or freezes regularly, especially without any apparent cause like malware, it's likely a sign of hardware or software failure due to age.
+HEADING:Unrepairable
+BULLET_ITEM:Physical Damage Affecting Functionality: While cosmetic damage is fine, if cracks on the screen lead to unresponsive touch areas, or if ports (charging, headphone) are intermittent, it's probably time for a replacement.
+BULLET_ITEM:Obsolete by Manufacturer/Repair Shops: If your phone is so old that manufacturers or local repair shops no longer offer support or replacement parts, it's definitely considered too old.
+LINK:How to get rid of an old phone || ditching
+PARAGRAPH:So is your phone free of hardware issues?
+BUTTON:No - Replace || go || replace || warning
+BUTTON:Yes- Go to Next Step || go || annoying || green
+
+##annoying
+HEADING:4. Annoying: It no longer meets your needs
+PARAGRAPH:If your phone no longer reliably performs the tasks you need it for, and the issues are not easily (or affordably) fixable, then it's probably "too old" for you.
+HEADING:Signs can include:
+BULLET_ITEM:Insufficient Storage Space: Constantly having to delete photos, videos, or apps to free up space is a sign you need more storage, which newer phones typically offer.
+BULLET_ITEM:Poor Camera Quality: If photography is important to you and your photos are consistently blurry, grainy, or lack detail compared to newer phones, it's a clear sign of outdated camera technology.
+LINK:How to get rid of an old phone || Ditching
+PARAGRAPH:So does your phone still do what you want?
+BUTTON:No - Replace || go || replace || warning
+BUTTON:Yes- Go to Next Step || go || Looks_good || green
+
+##PAGE:Looks_good
+HEADING:Your current phone is good
+PARAGRAPH:Congratulations. It seems like your current phone is secure and supported,, the battery and hardware in good shape and it still meets your needs.
+PARAGRAPH:No need to change just yet, enjoy it.
+BUTTON:Start over || go || intro || primary
+
+##DETAIL:Ditching
+HEADING:How to safely get rid of an old phone
+NUMBERED_ITEM:First transfer all your data to your new phone & check it is all there
+NUMBERED_ITEM:Make another backup if you have any concerns - this is your last chance to save any precious photos on the phone.
+NUMBERED_ITEM:Encrypt your data if it is not already . Most Apple and Android phones automatically ‘encrypt’ data.
+PARAGRAPH:This means a ‘key’ acts as a password, so your data cannot be read without it, he says.
+PARAGRAPH:Performing a factory reset on these phones deletes that encryption key.
+PARAGRAPH:Whatever data left inside the phone is encrypted, and it's very, very difficult to decrypt.
+BULLET_ITEM:Android devices are encrypted by default since Android 10. you can check the encryption status in the Settings under Security and Privacy >
+BULLET_ITEM:Apple devices use a file encryption methodology called Data Protection,
+BULLET_ITEM:If you have encrypted the microSD card, you must also decrypt it before resetting the device.
+PARAGRAPH:Otherwise, your device will not be able to read the data on the card.
+PARAGRAPH:From Settings, search for and select Decrypt SD card, and then follow the on-screen prompts.
+NUMBERED_ITEM:Disconnect it from any cloud service and sign out of all accounts.
+NUMBERED_ITEM:Do a factory reset -
+BULLET_ITEM:on an Android (Samsung Galaxy) - Settings, and then tap General management.
+BULLET_ITEM:Swipe to and tap Reset, then tap Factory data reset,
+BULLET_ITEM:On an Apple iphone - Go to Settings > General > Transfer or Reset iPhone.
+BULLET_ITEM:Tap Erase All Content and Settings.
+NUMBERED_ITEM:Remove your SIM card and any SD cards from the phone and keep them
+NUMBERED_ITEM:Choose a disposal option
+BULLET_ITEM:Don’t dump it - ewaste is nasty
+BULLET_ITEM:Don’t leave it in drawer
+BULLET_ITEM:Consider gifting it or selling it to someone else BUT ONLY if it still can be used securely and reliably
+BULLET_ITEM:Drop it into a mobile phone store (or anywhere you see the RE:MOBILE logo) for disposal and recycling
+BULLET_ITEM:Leave the battery in the phone.
+BULLET_ITEM:Switch the phone off
+LINK:Remobile || https://remobile.org.nz
+LINK:RNZ article on throwing away old tech || https://www.rnz.co.nz/life/lifestyle/what-do-i-need-to-do-before-throwing-away-old-tech
+
+##PAGE:Replace
+HEADING:Replacing your phone
+PARAGRAPH:So you’re ready to replace your phone. Here are some tips that will make the process less painless
+HEADING:Stick with the same OS camp
+PARAGRAPH:Android users tend to stick with Android, Apple users stick with Apple.
+PARAGRAPH:You can change camp relatively easily but you will have to make some adjustments for the different ways of working and sometimes this can be a hassle.
+PARAGRAPH:You may also need to pay again for any purchased apps on the new device.
+PARAGRAPH:We recommend aligning your smart phone model with any tablets or PCs that you have.
+PARAGRAPH:If you are a Mac and/or iPad user then an iPhone is the best bet.
+PARAGRAPH:If you use a Windows PC or Android tablet then get an Android phone.
+PARAGRAPH:This matching makes it simpler for you to use as you move from one to the other.
+PARAGRAPH:It also allows you to best use their sharing and interoperability features.
+HEADING:Be aware of when new phones are due.
+PARAGRAPH:New smartphone models are released every year. You may want to wait for the latest one.
+PARAGRAPH:Apple tend to announce new models each year around September, with availability pretty soon afterwards, in time for Christmas sales season
+PARAGRAPH:Samsung’s flagship models (the S series) come out in January or February and their foldables in July/August.
+PARAGRAPH:Other models are spread throughout the year.
+PARAGRAPH:Do a search to check when the model you want is due to be replaced
+HEADING:Buy wisely
+PARAGRAPH:Most people don’t need the most expensive flagship model. Most brands offer a choice of good, better and best phones.
+PARAGRAPH:Choose the one the best suits your budget and needs, not the one the salesman is pushing
+PARAGRAPH:There’s always someone with something on sale - so don’t be fooled by onetime specials
+PARAGRAPH:Talk to your mobile network provider - often they will trade your old phone and allow you to spread payments on the new one.
+PARAGRAPH:Check recommendations online with consumer or other reputable review sites
+HEADING:Prepare for an easy transfer from the old to the new
+PARAGRAPH:Update your old phone to latest versions of the OS
+PARAGRAPH:Backup your old phone - eg Apple to iCloud, Samsung to Samsung Cloud.
+PARAGRAPH:Or to a PC or USB storage device
+PARAGRAPH:Use the phone’s own tools to transfer data from the old device to the new one.
+PARAGRAPH:On Samsungs this is using an app called “SmartSwitch”, on iPhones have a similar tool "Quickstart".
+PARAGRAPH:In both cases you put phones next to each other with wifi and bluetooth on and the phone will guide you through the process.
+PARAGRAPH:Phone companies will usually help you get started with this for free, but you do it yourself in store (it can take some time depending on what’s on your phone).
+PARAGRAPH:If you want someone to do it for you then you will have to give them full access to your phone and passwords, and they may charge for the work.
+LINK:How to get rid of an old phone || Ditching
+LINK:Consumer Magazine guide to buying a mobile phone || https://www.consumer.org.nz/products/mobile-phones/guide
+BUTTON:Start over || go || intro || primary
