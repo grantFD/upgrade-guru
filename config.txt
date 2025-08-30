@@ -1,4 +1,4 @@
-##PAGE:intro
+##PAGE:start
 HEADING:The life expectancy of a smartphone
 PARAGRAPH:You might be surprised that until recently many experts say a smartphone will last around 2.5 years for an average user.
 PARAGRAPH:They expect flagship models, especially iPhones, to last 4-10 years and Samsungs 3-6 years.
@@ -38,5 +38,5 @@ PARAGRAPH:Recent regulations, such as those in the UK, require manufacturers lik
 PARAGRAPH:At the time of writing (July 2025) Apple models up to iPhone X (10) are obsolete and no longer supported.
 
 PARAGRAPH:So is your phone still supported?
-BUTTON:No - Replace || go || intro || warning
-BUTTON:Yes- Go to Next Step || go || intro || green
+BUTTON:No - Replace || go || start || warning
+BUTTON:Yes- Go to Next Step || go || start || green
