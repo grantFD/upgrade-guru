@@ -16,6 +16,7 @@ BULLET_ITEM:Exhausted: Battery drains rapidly
 BULLET_ITEM:Unreliable: hardware issues
 BULLET_ITEM:Annoying: It no longer meets your needs
 PARAGRAPH:Click the next button to find out more about each of these
+BUTTON_LAYOUT:horizontal
 BUTTON:Go to Next Step || go || vulnerable || green
 
 ##PAGE:vulnerable
@@ -36,7 +37,7 @@ PARAGRAPH:Apple is known for providing long-term software upgrades and security 
 PARAGRAPH:While they don't always provide a specific end-of-support date, generally, iPhones receive major iOS updates for about 5-7 years after their release, and security updates often continue for a period after major OS updates cease.
 PARAGRAPH:Recent regulations, such as those in the UK, require manufacturers like Apple to provide a minimum of five years of security updates from the first supply date.
 PARAGRAPH:At the time of writing (July 2025) Apple models up to iPhone X (10) are obsolete and no longer supported.
-
 PARAGRAPH:So is your phone still supported?
+BUTTON_LAYOUT:horizontal
 BUTTON:No - Replace || go || start || warning
 BUTTON:Yes- Go to Next Step || go || start || green
