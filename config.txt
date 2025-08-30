@@ -1,4 +1,4 @@
-##PAGE:start
+## PAGE:start
 HEADING:The life expectancy of a smartphone
 PARAGRAPH:You might be surprised that until recently many experts say a smartphone will last around 2.5 years for an average user.
 PARAGRAPH:They expect flagship models, especially iPhones, to last 4-10 years and Samsungs 3-6 years.
@@ -19,7 +19,7 @@ PARAGRAPH:Click the next button to find out more about each of these
 BUTTON_LAYOUT:horizontal
 BUTTON:Go to Next Step || go || vulnerable || green
 
-##PAGE:vulnerable
+## PAGE:vulnerable
 HEADING:1. Vulnerable: no more software or security updates
 PARAGRAPH:This is a critical indicator that it’s time to upgrade.. When your manufacturer stops providing OS and security updates, your phone becomes vulnerable to new threats and may not be compatible with newer apps.
 PARAGRAPH:The majority of malware that affects mobile devices relies on out-of-date software.
